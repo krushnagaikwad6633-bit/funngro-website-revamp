@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Learn about Funngro and its vision to help young talent discover skills and explore opportunities.">
+
+  <meta name="theme-color" content="#10152d">
+
+  <title>About Funngro | Discover Our Vision</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        Funngro<span>.</span>
+      </a>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="index.html#features">Why Funngro?</a>
+      </nav>
+
+      <a href="index.html#features" class="nav-button">
+        Explore
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-container">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">GET TO KNOW FUNNGRO</p>
+
+          <h1>
+            A World Full of
+            <span>Possibilities.</span>
+          </h1>
+
+          <p class="hero-description">
+            Funngro is presented in this redesign concept as
+            a platform that helps young people explore their
+            interests, develop skills and discover opportunities
+            to learn through experience.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="index.html" class="primary-button">
+              Back to Home
+            </a>
+
+            <a href="#our-vision" class="outline-button">
+              Our Vision
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="visual-glow"></div>
+
+          <div class="main-visual-card">
+
+            <div class="visual-top">
+              <span class="visual-label">THE FUNNGRO VISION</span>
+              <span class="visual-dot"></span>
+            </div>
+
+            <div class="visual-icon">🌟</div>
+
+            <h2>
+              Learn More.<br>
+              Achieve More.
+            </h2>
+
+            <p>
+              Every young mind deserves a chance to explore
+              its potential.
+            </p>
+
+            <div class="visual-bottom">
+              <span>Skills</span>
+              <span>Ideas</span>
+              <span>Growth</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="features section-padding" id="our-vision">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">OUR VISION</p>
+
+          <h2>
+            Helping Young Talent
+            <span>Move Forward.</span>
+          </h2>
+
+          <p>
+            We believe learning becomes more meaningful
+            when people can explore ideas and apply their
+            knowledge to practical experiences.
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+
+            <div class="feature-icon">🎓</div>
+
+            <h3>Learning</h3>
+
+            <p>
+              Encourage curiosity and continuous learning
+              through new experiences.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-icon">🧩</div>
+
+            <h3>Skill Development</h3>
+
+            <p>
+              Discover abilities, improve practical knowledge
+              and develop confidence.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="feature-icon">🌍</div>
+
+            <h3>Opportunities</h3>
+
+            <p>
+              Explore possibilities that help turn ideas
+              into meaningful experiences.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="cta-section">
+
+      <div class="container cta-content">
+
+        <p class="eyebrow">START YOUR JOURNEY</p>
+
+        <h2>
+          Your Potential Has
+          No Limits.
+        </h2>
+
+        <p>
+          Keep learning, keep exploring and keep growing.
+        </p>
+
+        <a href="index.html" class="primary-button">
+          Return to Homepage
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <a href="index.html" class="logo">
+        Funngro<span>.</span>
+      </a>
+
+      <p>Discover. Learn. Grow.</p>
+
+      <small>
+        © 2026 Funngro Website Redesign Concept.
+        Created for an evaluation project.
+      </small>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
