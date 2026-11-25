@@ -6,6 +6,12 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  // Check reduced-motion preference
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+
   // Smooth scrolling for section links
   const sectionLinks = document.querySelectorAll(
     'a[href^="#"], a[href*="#"]'
@@ -21,16 +27,20 @@ document.addEventListener("DOMContentLoaded", function () {
         url.pathname === window.location.pathname &&
         url.hash
       ) {
+
         const target = document.querySelector(url.hash);
 
         if (target) {
+
           event.preventDefault();
 
           target.scrollIntoView({
-            behavior: "smooth",
+            behavior: prefersReducedMotion ? "auto" : "smooth",
             block: "start"
           });
+
         }
+
       }
 
     });
@@ -43,7 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ".feature-card"
   );
 
-  if ("IntersectionObserver" in window) {
+  if (
+    "IntersectionObserver" in window &&
+    !prefersReducedMotion
+  ) {
 
     const observer = new IntersectionObserver(
       function (entries, currentObserver) {
@@ -72,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   } else {
 
+    // Show cards immediately if animation is unavailable
     cards.forEach(function (card) {
       card.classList.add("visible");
     });
