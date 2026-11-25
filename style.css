@@ -587,3 +587,124 @@ a:focus-visible {
     padding: 65px 0;
   }
   }
+
+/* =================================
+   NEW HOMEPAGE SECTIONS
+================================= */
+
+/* FAQ SECTION */
+
+.faq-section {
+  background: #ffffff;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+.faq-item {
+  background: #f5f7ff;
+  border: 1px solid #e4e8f2;
+  border-radius: 12px;
+  padding: 20px 22px;
+  transition: .3s;
+}
+
+.faq-item:hover {
+  border-color: #7567ff;
+}
+
+.faq-item summary {
+  color: #17203c;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  color: #7567ff;
+  font-size: 23px;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  color: #68738d;
+  font-size: 14px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e4e8f2;
+}
+
+/* FOOTER LINKS */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 12px 0;
+}
+
+.footer-links a {
+  color: #c2cbe0;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.footer-links a:hover {
+  color: #00bfea;
+}
+
+/* NAVIGATION IMPROVEMENTS */
+
+.navigation a {
+  transition: color .3s ease;
+}
+
+.navigation a:focus-visible,
+.footer-links a:focus-visible,
+.faq-item summary:focus-visible {
+  outline: 2px solid #7567ff;
+  outline-offset: 5px;
+}
+
+/* RESPONSIVE FAQ */
+
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 65px 0;
+  }
+
+  .faq-item {
+    padding: 17px;
+  }
+
+  .faq-item summary {
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    gap: 17px;
+  }
+}
